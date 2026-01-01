@@ -1,0 +1,110 @@
+/* Full page background */
+.landing-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #4facfe, #00f2fe);
+   */
+    background: linear-gradient(180deg ,#ffe8f0 50% , #ffffff 100%);
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.landing-card {
+  background: rgba(255, 255, 255, 0.95);
+  width: 360px;
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Image */
+.weather-image {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.landing-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Description */
+.landing-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* 3D Button */
+.start-btn {
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #0077cc;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 0 #0077cc;
+}
+
+/* Click (pressed) effect */
+.start-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #0077cc;
+}
+
+@media (max-width: 480px) {
+  .landing-card {
+    width: 60%;
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .landing-title {
+    font-size: 1.8rem;
+  }
+
+  .landing-description {
+    font-size: 0.95rem;
+  }
+
+  .weather-image {
+    width: 90px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .landing-card {
+    width: 420px;
+    padding: 35px 30px;
+  }
+
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .weather-image {
+    width: 110px;
+  }
+}
